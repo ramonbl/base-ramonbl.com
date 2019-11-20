@@ -1,0 +1,50 @@
+# Organización carpetas
+
+[Conviértete en arquitecto CSS | Programador Web Valencia](https://programadorwebvalencia.com/conviertete-en-arquitecto-css/)
+
+# Trabajo en PostProducción
+-----------------------
+[Postproducción cuando subes una página web | Programador Web Valencia](https://programadorwebvalencia.com/postproduccion-cuando-subes-una-pagina-web/)
+
+
+# Entrega Productro
+# -------------------
+
+[¿Cómo entregar una página web como un profesional? | Programador Web Valencia](https://programadorwebvalencia.com/como-entregar-una-web-como-un-profesional/)
+
+1. Repositorio
+El código debe ir siempre en un repositorio (Git). Cuando se termine un proyecto no vas a dar el código en un zip. Es feo, no mantiene un historial, no hay registro de los colaboradores… Hay que transferir los privilegios de un repositorio al cliente. Él es el propietario.
+
+Recomiendo utilizar Bitbucket para esta tarea. Destaca por ser privado y gratuito. No digo que trabajes en la plataforma, que sinceramente es un servicio excelente, sino que cuando toque entregarlo lo importes a esa plataforma y después transfieras el privilegio.
+
+2. Material utilizado
+Todo lo relacionado con el material estático: imágenes, fuentes, psd, referencias, colores… Cualquier elemento estético que se utilizara para crear la interfaz.
+
+En alguna ocasión pueden existir diagramas, bocetos o borradores. Puede ser interesante clasificarlos antes de entregarlo. Después de todo, no lo vas a volver a utilizar.
+
+3. Servidor staging
+Es una práctica que hace muy poco he adquirido. Si el cliente tiene presupuesto, montas la web en dos servidores diferenciados. En uno tendremos una versión beta no abierta al público. Destinada a probar cambios o visualizar tareas acabadas por parte del cliente. Lo llamaremos Staging. Y por otro lado, el servidor de Producción. O donde la página será abierta al público.
+
+El objetivo es una mayor estabilidad. Por un lado tenemos una web para que el cliente rompa cosas. Pruebe diferentes opciones, visualice las últimas tareas, nos informe de fallos… todo ello sin que nadie más lo vea salvo él y nosotros. Y por otro la web con versiones estables. Sin que los usuarios lleguen a percibir cambios salvos cuando sean muy seguros.
+
+4. Documentación
+No tendría que escribir este apartado, pero es necesario: el código debe ir siempre documentado. Y si puede ser, con una wiki. Para nuestros ojos esta claro cada línea, pero para nuevos desarrolladores será chino mandarín. Hay que ayudar para que sea claro donde deben trabajar. Y si queréis ser egoístas, pensar en leer ese código en 2 meses. No sabréis ni como arrancarlo a nos ser que tengáis un tutorial.
+
+Un documento que lo acompañe no vendría mal. Una guía rápida explicando cómo funciona, que ficheros son importantes, y apuntes para su funcionamiento y modificación.
+
+Es importante a parte de la documentación del proyecto entregar un documento donde se especifique la arquitectura de la misma: despliegue, configuraciones, credenciales
+
+5. Presupuesto de mejoras
+El cliente desconoce como puede mejorar su web. Por ello tomarnos la libertad de aclarárselo en un nuevo presupuesto orientado al posicionamiento. Lo cual es muy beneficioso para ambos. El cliente conseguirá más visitas, y tú más trabajo.
+
+Mejoras de SEO.
+Implementar AMP (Accelerated Mobile Pages).
+Implementación de CDN.
+Servicio externo de SMTP.
+Optimización de carga.
+Diseño de smartphone.
+Revisión de texto por parte de un copywriter.
+Campañas en redes sociales.
+Blog (para aumentar el contenido y el posicionamiento).
+Y con esto esta todo. Pedir permiso para subir el enlace a tu portafolio sería también interesante.
+

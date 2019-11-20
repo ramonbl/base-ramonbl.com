@@ -1,0 +1,151 @@
+<!-- 
+  [Ejemplo Javascript cartel Cookies | Programador Web Valencia](https://programadorwebvalencia.com/Javascript-ejemplo-aviso-o-cartel-de-cookie/) 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <section>
+    Esta es mi web
+  </section>
+  <section class="cookies">
+    <h2 class="cookies__titulo">¿Quieres nuestras Cookies?</h2>
+    <p class="cookies__texto">Usamos cookies para mejorar tu experiencia en la web.</p>
+    <div class="cookies__botones">
+      <button class="cookies__boton cookies__boton--no">No</button>
+      <button class="cookies__boton cookies__boton--si">Si</button>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      let cookies = () => {
+        //======================================================================
+        // COOKIES
+        //======================================================================
+
+        //-----------------------------------------------------
+        // Variables
+        //-----------------------------------------------------
+        let seccionCookie = document.querySelector('section.cookies');
+        let cookieSi = document.querySelector('.cookies__boton--si');
+        let cookieNo = document.querySelector('.cookies__boton--no');
+
+        //-----------------------------------------------------
+        // Funciones
+        //-----------------------------------------------------
+
+        /**
+         * Método que oculta la sección de Cookie para siempre
+         */
+        function ocultarCookie() {
+          // Borra la sección de cookies en el HTML
+          seccionCookie.remove();
+        }
+
+        /**
+         * Método que marca las cookies como aceptadas
+         */
+        function aceptarCookies() {
+          // Oculta el HTML de cookies
+          ocultarCookie();
+          // Guarda que ha aceptado
+          localStorage.setItem('cookie', true);
+          // Tu codigo a ejecutar si aceptan las cookies
+          ejecutarSiAcepta();
+        }
+
+        /**
+         * Método que marca las cookies como denegadas
+         */
+        function denegarCookies() {
+          // Oculta el HTML de cookies
+          ocultarCookie();
+          // Guarda que ha aceptado
+          localStorage.setItem('cookie', false);
+        }
+
+        /**
+         * Método que ejecuta tu código si aceptan las cookies
+         */
+        function ejecutarSiAcepta() {
+          /////////////////// Tu código ////////////////
+          ////////////  ¿Google Analítics? /////////////
+        }
+
+        /**
+         * Método que inicia la lógica
+         */
+        function iniciar() {
+          // Comprueba si en el pasado el usuario ha marcado una opción
+          if (localStorage.getItem('cookie') !== null) {
+            if (localStorage.getItem('cookie') === 'true') {
+              // Aceptó
+              aceptarCookies();
+            } else {
+              // No aceptó
+              denegarCookies();
+            }
+          }
+        }
+
+        //-----------------------------------------------------
+        // Eventos
+        //-----------------------------------------------------
+        cookieSi.addEventListener('click', aceptarCookies, false);
+        cookieNo.addEventListener('click', denegarCookies, false);
+
+        return {
+          iniciar: iniciar
+        }
+      }
+
+      // Activa el código. Comenta si quieres desactivarlo.
+      cookies().iniciar();
+
+    });
+  </script>
+</body>
+
+</html>
+
+<!-- 
+
+<?php
+
+[PHP ejemplo sencillo de cartel o aviso de Cookies | Programador Web Valencia](https://programadorwebvalencia.com/PHP-ejemplo-aviso-o-cartel-de-cookie/)
+
+// Si han aceptado la política
+if(isset($_REQUEST['politica-cookies'])) {
+    // Calculamos la caducidad, en este caso un año
+    $caducidad = time() + (60 * 60 * 24 * 365);
+    // Crea una cookie con la caducidad
+    setcookie('politica', '1', $caducidad);
+}
+
+?>
+<!DOCTYPE html>
+<html>
+<body>
+    <div>
+        <?php if (!isset($_REQUEST['politica-cookies']) && !isset($_COOKIE['politica'])): ?>
+            
+            <div class="cookies">
+                <h2>Cookies</h2>
+                <p>¿Aceptas nuestras cookies?</p>
+                <a href="?politica-cookies=1">Aceptar</a>
+            </div>
+        <?php endif; ?>
+    </div>
+</body>
+</html>
+  
+ -->

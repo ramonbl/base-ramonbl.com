@@ -1,0 +1,115 @@
+//- 
+  TEMPLATE.PUG es el layout BASE sobre el que construir todo las páginas del sitio usando:
+    extends ../includes/template
+  en todas las páginas
+
+
+
+//  TEMPLATE_INDEX
+
+//- Generamox bloque para comentarios de la página que llama a Template_index
+block COMMENTS
+  // block COMMENTS generado desde `template_index`
+  // --- Esta página está usando template_index ---
+  // end block COMMETS
+|
+|
+
+//- Generamox bloque para incluir y variables del config y poder modificarlas
+// block CONFIG generado desde `template_index`
+block CONFIG
+  // include `config/CONFIG` desde `template_index`
+  include config
+
+//- Incluimos Mixins necesarios
+// include `mixins/MIXINS_BASE` desde `template_index`
+include ../mixins/mixins_base
+// include `mixins/AUDIO_CONTROLS` desde `template_index`
+include ../mixins/audio-controls
+|
+|
+//-  --------------     DOCTYPE --------------------
+doctype
+html(lang="es")
+
+  head
+    
+    // block METAS_PROPIOS generado desde `template_index`
+    block METAS_PROPIOS
+      //- [Encabezados HTTP y etiqueta meta http-equiv - Programando a medianoche](https://www.programandoamedianoche.com/2016/02/encabezados-http-y-etiqueta-meta-http-equiv/)
+      meta(http-equiv="content-type" content="text/html" charset= `${encode}`)
+      meta(name= "author" content= `${metaAuthor}`)
+      meta(name= "description" content= `${metaDescription}`)
+      //- <meta http-equiv="location" content="5; segundaPagina.html" /> //- redirecciona página a los 5s
+      meta(property="og:image" content= `${dirImg}comparte-fb.png`)
+      // end block METAS_PROPIOS
+
+    title= `${pageTitle} | ${siteName}` 
+    link(type="text/plain" rel="author" href="humans.txt")
+    link(rel="icon" type="img/png" href= `${dirImg}favicon.png`)
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
+    <![endif]-->
+
+    // block STYLES generado desde `template_index`
+    block STYLES
+      link(rel="stylesheet" href="css/styles.css")
+      // end block STYLES
+  |
+  |    
+  body(id= `${currentPage.toLowerCase().split(' ').join('_')}` class= `body ${currentPage.toLowerCase().split(' ').join('_')}`)
+
+    .wrapper
+      // --- block MAIN_HEADER generado desde `template_index`--- 
+      header#main_header.header.main_header
+        block MAIN_HEADER
+          // include `includes/MAIN_HEADER` desde `template_index`
+          include ../includes/main_header
+        // --- end block MAIN_HEADER de `template_index ---
+      |
+      |
+      // --- block MAIN_BANNER generado desde `template_index`--- 
+      div#main_banner.banner.main_banner
+        block MAIN_BANNER
+          // include `includes/MAIN_BANNER` desde `template_index`
+          include ../includes/main_banner
+        // --- end block MAIN_BANNER de `template_index ---
+      |
+      |
+      // --- block MAIN_NAV generado desde `template_index`---
+      nav#main_nav.nav.main_nav
+        block MAIN_NAV
+          // include `includes/MAIN_NAV` desde `template_index`
+          include ../includes/main_nav
+        // --- end block MAIN_NAV de `template_index ---
+      |
+      |
+      // --- block MAIN_MAIN generado desde `template_index` ---
+      main#main_main.main.main_main
+        block MAIN_MAIN
+          // include `includes/MAIN_MAIN` desde `template_index`
+          include ../includes/main_main 
+        // --- end block MAIN_MAIN de `template_index` ---  
+      |
+      |
+      // --- block MAIN_FOOTER generado desde `template_index`R ---
+      
+    footer#main_footer.footer.main_footer
+      block FOOTER
+        //  include `includes/MAIN_FOOTER` desde `template_index` 
+        include ../includes/main_footer
+      // --- end block MAIN_FOOTER de `template_index ---  
+      |
+      |
+      // --- block SCRIPTS generado desde `template_index` ---
+      block FINAL_SCRIPTS
+        //- script. 
+        //-   console.log('Hola mundo')
+        <script type='text/javascript' src='js/index.js'></script>
+        <script type='text/javascript' src='js/prism/prism.js'></script>
+        <script type='text/javascript' src='js/prism/rbl_prism_btnSelect.js'></script>
+        //- <script type='text/javascript' src='js/prism/rbl_prism_prefix.js'></script>
+        // --- end block FINAL_SCRIPTS de `template_index ---
+
+// end TEMPLATE_INDEX

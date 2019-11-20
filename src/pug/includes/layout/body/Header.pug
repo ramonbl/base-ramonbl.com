@@ -1,0 +1,38 @@
+|
+|
+// --- BOTÓN MENÚ
+.container
+
+  a.top-nav.sidenav-trigger.waves-effect.waves-light.circle.hide-on-large-only(href="#" data-target="nav-mobile")
+    i.material-icons menu
+|
+|
+// ---  SIDENAV-fixed ---
+ul#nav-mobile.sidenav.sidenav-fixed(style="width: 270px")
+ 
+  //   side-nav__LOGO 
+  li.logo
+    a#logo-container.brand-logo(href="/")
+      object#front-page-logo(type="image/svg+xml" data="res/ramonbl.svg") Tu navegador no soporta SVG
+
+  //  side_nav__DROPDOWN (versiones/idiomas)  
+  li.version
+    include header__dropdown
+   
+  //  side_nav__SEARCH 
+    Funciona buscando los títulos principales de las páginas o en primer párrafo de descripción
+  li.search
+    include search.pug
+
+  // side_nav__ELEMENTOS_MENU
+  include header__elementos_menu
+|
+|
+// Sidebar BSA: PUBLICIDAD AL FINAL DE LA BARRA (NO SE VE CON BLOQUEADOR)
+include bsa-publicity
+|
+|
+// Sidebar BSA: PATREON (NO SE COMO FUNCIONA)
+include bsa-patreon
+|
+|

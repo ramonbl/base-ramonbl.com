@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Galería tipo Pinterest - campusMVP</title>
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:400,500,600,700" rel="stylesheet" type="text/css">
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
+    body {
+      font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 18px;
+      font-size: 1.8rem;
+      background-color: #f3f3f3;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    main>header {
+      background-color: #02223a;
+    }
+
+    h1 {
+      color: #003366;
+      font-size: 30px;
+      font-size: 3rem;
+      -webkit-column-span: all;
+      -moz-column-span: all;
+      column-span: all;
+    }
+
+    a {
+      text-decoration: none;
+      color: #036;
+    }
+
+    #galeria {
+      margin: 1rem auto;
+      width: 100%;
+      max-width: 960px;
+      padding: 0 20px 20px;
+      box-sizing: border-box;
+      column-count: 3;
+
+      /* Espacio entre columnas */
+      -moz-column-gap: 20px;
+      -webkit-column-gap: 20px;
+      column-gap: 20px;
+
+      /* Filete entre columnas */
+      /*-moz-column-rule: 1px solid #bbb;
+            -webkit-column-rule: 1px solid #bbb;
+            column-rule: 1px solid #bbb;*/
+
+
+    }
+
+    #galeria header {
+      -webkit-column-span: all;
+      column-span: all;
+    }
+
+    article {
+      background: #fff;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin: 0 0 20px 0;
+      text-align: center;
+      max-width: 100%;
+      filter: opacity(70%);
+
+      /*Evitamos que se corte al cambiar de columna*/
+      break-inside: avoid;
+      page-break-inside: avoid;
+
+    }
+
+    article img {
+      width: 100%;
+    }
+
+    article:hover {
+      transition: .5s ease;
+      filter: opacity(100%);
+    }
+
+    figure {
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+
+
+    /* Móviles en horizontal o tablets en vertical */
+    @media (max-width: 767px) {
+      #galeria {
+        columns: 2;
+      }
+
+    }
+
+    /* Móviles en vertical */
+
+    @media (max-width: 480px) {
+      #galeria {
+        columns: 1;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+      <div id="logowrap">
+        <img src="imagenes/logo-campusmvp.png" alt="Logo de campusMVP" />
+      </div>
+
+    </header>
+    <section id="galeria">
+      <header>
+        <h1>Cursos y libros de campusMVP</h1>
+      </header>
+      <article>
+        <a target="_blank" href="https://www.campusmvp.es/catalogo/Product-Desarrollo-de-aplicaciones-web-con-Angular-7_232.aspx">
+          <figure>
+            <img src="imagenes/curso-angular.jpg" />
+            <figcaption>Curso online de Angular</figcaption>
+          </figure>
+        </a>
+      </article>
+      <article>
+        <a target="_blank" href="https://www.campusmvp.es/catalogo/Product-Docker-y-Kubernetes-desarrollo-y-despliegue-de-aplicaciones-basadas-en-contenedores_237.aspx">
+          <figure>
+            <img src="imagenes/curso-docker.png" />
+            <figcaption>Curso de Docker y Kubernetes</figcaption>
+          </figure>
+        </a>
+      </article>
+      <article>
+        <a target="_blank" href="https://www.campusmvp.es/catalogo/Product-SharePoint-2013-de-principio-a-fin-(PDF)_176.aspx">
+          <figure>
+            <img src="imagenes/libro-Sharepoint-2013.jpg" />
+            <figcaption>Libro SharePoint 2013</figcaption>
+          </figure>
+        </a>
+      </article>
+
+      <article>
+        <a target="_blank" href="https://www.campusmvp.es/catalogo/Product-SharePoint-2016-de-principio-a-fin_223.aspx">
+          <figure>
+            <img src="imagenes/libro-Sharepoint-2016.jpg" />
+            <figcaption>Libro SharePoint 2016</figcaption>
+          </figure>
+        </a>
+      </article>
+
+      <article>
+        <a target="_blank" href="https://www.campusmvp.es/catalogo/Product-Desarrollo-de-aplicaciones-de-gesti%C3%B3n-empresariales-con-Velneo---Curso-Oficial_238.aspx">
+          <figure>
+            <img src="imagenes/curso-velneo-online.png" />
+            <figcaption>Curso online de Velneo</figcaption>
+          </figure>
+        </a>
+      </article>
+
+      <article>
+        <a target="_blank" href="https://www.campusmvp.es/catalogo/Product-Desarrollo-de-aplicaciones-con-la-plataforma-Java_231.aspx">
+          <figure>
+            <img src="imagenes/curso-java-online.jpg" />
+            <figcaption>Curso online de Java</figcaption>
+          </figure>
+        </a>
+      </article>
+      <article>
+        <a target="_blank" href="https://www.campusmvp.es/catalogo/Product-Especialista-en-programaci%C3%B3n-Web-con-HTML5,-CSS3,-JavaScript-y-jQuery_235.aspx">
+          <figure>
+            <img src="imagenes/curso-front-end.png" />
+            <figcaption>Curso Front End</figcaption>
+          </figure>
+        </a>
+      </article>
+      <article>
+        <a target="_blank" href="https://www.campusmvp.es/catalogo/Product-Desarrollo-de-aplicaciones-m%C3%B3viles-para-iPhone-y-Android-con-Xamarin_160.aspx">
+          <figure>
+            <img src="imagenes/curso-xamarin.jpg" />
+            <figcaption>Curso de Xamarin</figcaption>
+          </figure>
+        </a>
+      </article>
+
+      <article>
+        <a target="_blank" href="https://www.campusmvp.es/catalogo/Product-Programaci%C3%B3n-con-ASP.NET-SignalR-2.0-(PDF)_217.aspx">
+          <figure>
+            <img src="imagenes/Libro-SignalR.jpg" />
+            <figcaption>Libro de SignalR</figcaption>
+          </figure>
+        </a>
+      </article>
+      <article>
+        <a target="_blank" href="https://www.campusmvp.es/catalogo/Product-Desarrollo-Web-con-ASP.NET-Core-2-MVC_227.aspx">
+          <figure>
+            <img src="imagenes/curso-asp-net-core-mvc.png" />
+            <figcaption>Curso ASP.NET Core MVC</figcaption>
+          </figure>
+        </a>
+      </article>
+      <article>
+        <a target="_blank" href="https://www.campusmvp.es/catalogo/Product-Especialista-en-programaci%C3%B3n-de-bases-de-datos-con-SQL-Server_236.aspx">
+          <figure>
+            <img src="imagenes/curso-sql-server.png" />
+            <figcaption>Curso de SQL Server</figcaption>
+          </figure>
+        </a>
+      </article>
+
+
+
+    </section>
+  </main>
+</body>
+
+</html>

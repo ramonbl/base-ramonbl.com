@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+
+:root {
+    --color-primario:   #00a8ff;
+    --color-secundario: #2f3640;
+    --color-gris:       #dcdde1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu';
+}
+
+.contenedor {
+    width: 100%;
+    height: 3rem;
+    padding: 0 7rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-secundario);
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.color {
+    color: var(--color-primario);
+}
+
+.icono-menu {
+    width: 25px;
+    height: 25px;
+    display: none;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: var(--color-gris);
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .contenedor {
+        padding: 0 3rem;
+    }
+
+    .nav-contenedor {
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: 3rem;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        transition: all .3s;
+    }
+
+    .nav-item {
+        width: 100%;
+        padding: 1rem 0;
+        color: var(--color-gris);
+        background: var(--color-secundario);
+        margin: 0;
+        text-align: center;
+    }
+
+    .icono-menu {
+        display: inline;
+        cursor: pointer;
+    }
+
+    .nav-item:hover {
+        background: var(--color-primario);
+    }
+
+    .mostrar {
+        left: 0;
+    }
+}

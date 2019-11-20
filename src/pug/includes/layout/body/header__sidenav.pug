@@ -1,0 +1,54 @@
+|
+|
+ul#nav-mobile.sidenav.sidenav-fixed(style="width: 270px")
+ 
+  //  -----------side-nav__LI.LOGO 
+  li.logo
+    a#logo-container.brand-logo(href="/")
+      object#front-page-logo(type="image/svg+xml" data="res/ramonbl.svg") Tu navegador no soporta SVG
+
+
+  // ------------ side_nav__LI.DROPDOWN (versiones/idiomas) ----------- 
+  li.version
+    include header__dropdown
+   
+
+  // ------------ side_nav__LI.SEARCH ----------- 
+    Funciona buscando los títulos principales de las páginas o en primer párrafo de descripción
+  li.search
+    include search.pug
+
+  li.bold
+    a.waves-effect.waves-teal(href="about.html") About
+
+  li.bold
+    a.waves-effect.waves-teal(href="getting-started.html") Getting Started 
+
+  // ------------ side_nav__LI__UL--COLLAPSIBLE--ACCORDION ----------- 
+  li.no-padding
+    ul.colllapsible.collapsible-accordion 
+      // -------- side_nav__LI__UL--COLLAPSIBLE--ACCORDION__LI.BOLD--CSS ------ 
+      +collapsible_li("CSS", "color", "grid", "helpers", "media-css", "pulse", "sass", "shadow", "table", "css-transitions", "typography")
+
+      // ------- side_nav__LI__UL--COLLAPSIBLE--ACCORDION__LI.BOLD--COMPONENTS ------ 
+      +collapsible_li("Components", "badgets", "buttons", "breadcrumbs", "cards", "collections", "floating-action-button", "footer", "icons", "navbar", "pagination", "preloader")
+
+
+      // ------ side_nav__LI__UL--COLLAPSIBLE--ACCORDION__LI.BOLD--JAVASCRIPT--- 
+      +collapsible_li("Javascript", "auto-init", "carousel", "collapsible", "dropdown", "feature-discovery", "media", "modals", "parallax", "pushpin", "scrollspy", "sidenav", "tabs", "toast", "tooltips", "waves")
+
+      // ------ side_nav__LI__UL--COLLAPSIBLE--ACCORDION__LI.BOLD--FORMS--- 
+      +collapsible_li("Forms", "autocomplete", "checkboxes", "chips", "pickers", "radio-buttons", "range", "select", "switches", "text-inputs")
+
+
+  li.bold
+    a.waves-effect.waves-teal(href="mobile.html") Mobile 
+
+  li.bold
+    a.waves-effect.waves-teal(href="showcase.html") Showcase 
+
+  li.bold
+    a.waves-effect.waves-teal(href="getting-started.html") Themes
+      span.new.badge(data-badge-caption="updated")
+  |
+  |

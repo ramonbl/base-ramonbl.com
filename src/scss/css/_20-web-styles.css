@@ -1,0 +1,1245 @@
+@charset "UTF-8";
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* VARIABLES PARA PODER USAR EN EL SCSS DE LA LIBRERÍA Y DEL WEBSITE 
+   --------------------------------------------------------------  */
+/* Variables COLORES (de todo) en: `web-styles/30-theme/-10-colors.scss` */
+/* variables ICONOS: `web-styles/base/_icons` */
+/* variables BOTONES: `web-styles/componentes/_10-buttons` */
+/* Para controlar los z-index de las siguientes selectores 
+Ir a: `web-styles/50-layout/_10-layer.scss`
+*/
+/*  CAMBIAR EL SCSS DE DE GHPAGES-MATERIALIZE REEMPLAZANDO:
+ * 1. Ver al final
+
+*/
+/* Remplazar en el  SCSS  de ghpages-materializa(era CSS puro) 
+
+and (min-width: 601px
+and (min-width: map-get($rbl-breakpoints, m)
+
+and (min-width: 993px
+and (min-width: map-get($rbl-breakpoints, l)
+
+and (min-width: 1201px
+and (min-width: map-get($rbl-breakpoints, xl)
+
+
+and (min-width: 600px
+and (min-width: map-get($rbl-breakpoints, m) - 1px
+
+and (min-width: 992px
+and (min-width: map-get($rbl-breakpoints, l) - 1px
+
+and (min-width: 1200px
+and (min-width: map-get($rbl-breakpoints, xl) - 1px
+
+
+and (max-width: 600px
+and (max-width: map-get($rbl-breakpoints, m) - 1px
+
+and (max-width: 992px
+and (max-width: map-get($rbl-breakpoints, l) - 1px
+
+and (max-width: 1200px
+and (max-width: map-get($rbl-breakpoints, xl) - 1px
+
+*/
+/* IMPORTACIÓN FRAMEWORK CSS UTILIZADO 
+   -------------------------------------- */
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* VARIABLES GENERALES
+-------------------------------------------- 
+Código para este proyecto
+-------------------------------------------- */
+/* end NUEVO CÖDIGO  */
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* NUEVO CÓDIGO
+-------------------------------------------- 
+Código para este proyecto
+-------------------------------------------- */
+/* end NUEVO CÖDIGO  */
+/* PREVIOUS CODE
+--------------------------------------------
+Código del proyecto anterior
+--------------------------------------------*/
+/* end PREVIOUS CODE   */
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* NUEVO CÓDIGO
+-------------------------------------------- 
+Código para este proyecto
+-------------------------------------------- */
+/* end NUEVO CÖDIGO  */
+/* PREVIOUS CODE
+--------------------------------------------
+Código del proyecto anterior
+--------------------------------------------*/
+/* end PREVIOUS CODE   */
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* NUEVO CÓDIGO
+-------------------------------------------- 
+Sacado de EDTEAMgrid
+-------------------------------------------- */
+/* end NUEVO CÖDIGO  */
+/* PREVIOUS CODE
+--------------------------------------------
+Código del proyecto anterior
+--------------------------------------------*/
+/* end PREVIOUS CODE   */
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* NUEVO CÓDIGO
+-------------------------------------------- 
+Código para este proyecto
+-------------------------------------------- */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: sans-serif; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+p:empty {
+  /* Muy interesante para que elimine los párrafos vacíos. */
+  padding: 0;
+  background: red; }
+
+/* pre {
+  white-space: pre-wrap;
+}  */
+/* end NUEVO CÖDIGO  */
+/* PREVIOUS CODE
+--------------------------------------------
+Código del proyecto anterior
+--------------------------------------------*/
+/* end PREVIOUS CODE   */
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* NUEVO CÓDIGO
+-------------------------------------------- 
+Código para este proyecto
+-------------------------------------------- */
+.tab::first-letter {
+  margin-left: 1em; }
+
+/* end NUEVO CÖDIGO  */
+/* PREVIOUS CODE
+--------------------------------------------
+Código del proyecto anterior
+--------------------------------------------*/
+/* end PREVIOUS CODE   */
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* NUEVO CÓDIGO
+-------------------------------------------- 
+Código para este proyecto
+-------------------------------------------- */
+/* end NUEVO CÖDIGO  */
+/* PREVIOUS CODE
+--------------------------------------------
+Código del proyecto anterior
+--------------------------------------------*/
+/* end PREVIOUS CODE   */
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* NUEVO CÓDIGO
+-------------------------------------------- 
+Código para este proyecto
+-------------------------------------------- */
+.rbl-video {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative; }
+  .rbl-video > iframe,
+  .rbl-video > video,
+  .rbl-video > .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+/* end NUEVO CÖDIGO  */
+/* PREVIOUS CODE
+--------------------------------------------
+Código del proyecto anterior
+--------------------------------------------*/
+/* end PREVIOUS CODE   */
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* NUEVO CÓDIGO
+-------------------------------------------- 
+[Una Introducción a los Mapas Sass: Uso y Ejemplos](https://webdesign.tutsplus.com/es/tutorials/an-introduction-to-sass-maps-usage-and-examples--cms-22184)
+-------------------------------------------- */
+.rbl-icon--tipo1 {
+  content: content-valor1; }
+
+.rbl-icon--tipo2 {
+  content: content-valor2; }
+
+/* end NUEVO CÖDIGO  */
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* NUEVO CÓDIGO
+-------------------------------------------- 
+[Una Introducción a los Mapas Sass: Uso y Ejemplos](https://webdesign.tutsplus.com/es/tutorials/an-introduction-to-sass-maps-usage-and-examples--cms-22184)
+-------------------------------------------- */
+/* end NUEVO CÓDIGO  */
+/* PREVIOUS CODE
+--------------------------------------------
+Código del proyecto anterior
+--------------------------------------------*/
+/* end PREVIOUS CODE   */
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* NUEVO CÓDIGO
+-------------------------------------------- 
+Código para este proyecto
+-------------------------------------------- */
+/* end NUEVO CÖDIGO  */
+/* PREVIOUS CODE
+--------------------------------------------
+Código del proyecto anterior
+--------------------------------------------*/
+/* end PREVIOUS CODE   */
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* NUEVO CÓDIGO
+-------------------------------------------- 
+Código para este proyecto
+-------------------------------------------- */
+/* end NUEVO CÖDIGO  */
+/* PREVIOUS CODE
+--------------------------------------------
+Código del proyecto anterior
+--------------------------------------------*/
+/* end PREVIOUS CODE   */
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* NUEVO CÓDIGO
+-------------------------------------------- 
+Código para este proyecto
+-------------------------------------------- */
+/* end NUEVO CÖDIGO  */
+/* PREVIOUS CODE
+--------------------------------------------
+Código del proyecto anterior
+--------------------------------------------*/
+/* end PREVIOUS CODE   */
+/* PrismJS 1.17.1
+https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+bash+css-extras+diff+markup-templating+docker+git+go+http+java+php+javadoclike+markdown+json+js-templates+jsdoc+phpdoc+php-extras+sql+powershell+scss+js-extras+plsql+javadoc+shell-session+pug+regex+vim&plugins=line-highlight+line-numbers+autolinker+wpd+custom-class+file-highlight+toolbar+highlight-keywords+inline-color+previewers+autoloader+unescaped-markup+command-line+normalize-whitespace+keep-markup+show-language+copy-to-clipboard+download-button+match-braces+diff-highlight */
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #f8f8f2;
+  background: none;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none; }
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border-radius: 0.3em; }
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #272822; }
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal; }
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: slategray; }
+
+.token.punctuation {
+  color: #f8f8f2; }
+
+.namespace {
+  opacity: .7; }
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #f92672; }
+
+.token.boolean,
+.token.number {
+  color: #ae81ff; }
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #a6e22e; }
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  color: #f8f8f2; }
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+  color: #e6db74; }
+
+.token.keyword {
+  color: #66d9ef; }
+
+.token.regex,
+.token.important {
+  color: #fd971f; }
+
+.token.important,
+.token.bold {
+  font-weight: bold; }
+
+.token.italic {
+  font-style: italic; }
+
+.token.entity {
+  cursor: help; }
+
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em; }
+
+.line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  /* Same as .prism’s padding-top */
+  background: rgba(153, 122, 102, 0.08);
+  background: -webkit-gradient(linear, left top, right top, color-stop(70%, rgba(153, 122, 102, 0.1)), to(rgba(153, 122, 102, 0)));
+  background: -webkit-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  background: -o-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  background: linear-gradient(to right, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre; }
+
+.line-highlight:before,
+.line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: rgba(153, 122, 102, 0.4);
+  color: #f5f2f0;
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  -webkit-box-shadow: 0 1px white;
+  box-shadow: 0 1px white; }
+
+.line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em; }
+
+.line-numbers .line-highlight:before,
+.line-numbers .line-highlight:after {
+  content: none; }
+
+pre[class*="language-"].line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber; }
+
+pre[class*="language-"].line-numbers > code {
+  position: relative;
+  white-space: inherit; }
+
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em;
+  /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.line-numbers-rows > span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber; }
+
+.line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right; }
+
+.token a {
+  color: inherit; }
+
+code[class*="language-"] a[href],
+pre[class*="language-"] a[href] {
+  cursor: help;
+  text-decoration: none; }
+
+code[class*="language-"] a[href]:hover,
+pre[class*="language-"] a[href]:hover {
+  cursor: help;
+  text-decoration: underline; }
+
+div.code-toolbar {
+  position: relative; }
+
+div.code-toolbar > .toolbar {
+  position: absolute;
+  top: .3em;
+  right: .2em;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0; }
+
+div.code-toolbar:hover > .toolbar {
+  opacity: 1; }
+
+/* Separate line b/c rules are thrown out if selector is invalid.
+   IE11 and old Edge versions don't support :focus-within. */
+div.code-toolbar:focus-within > .toolbar {
+  opacity: 1; }
+
+div.code-toolbar > .toolbar .toolbar-item {
+  display: inline-block; }
+
+div.code-toolbar > .toolbar a {
+  cursor: pointer; }
+
+div.code-toolbar > .toolbar button {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-user-select: none;
+  /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none; }
+
+div.code-toolbar > .toolbar a,
+div.code-toolbar > .toolbar button,
+div.code-toolbar > .toolbar span {
+  color: #bbb;
+  font-size: .8em;
+  padding: 0 .5em;
+  background: #f5f2f0;
+  background: rgba(224, 224, 224, 0.2);
+  -webkit-box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+  border-radius: .5em; }
+
+div.code-toolbar > .toolbar a:hover,
+div.code-toolbar > .toolbar a:focus,
+div.code-toolbar > .toolbar button:hover,
+div.code-toolbar > .toolbar button:focus,
+div.code-toolbar > .toolbar span:hover,
+div.code-toolbar > .toolbar span:focus {
+  color: inherit;
+  text-decoration: none; }
+
+span.inline-color {
+  display: inline-block;
+  height: 1.333ch;
+  width: 1.333ch;
+  margin: 0 .333ch;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid white;
+  outline: 1px solid black; }
+
+.prism-previewer,
+.prism-previewer:before,
+.prism-previewer:after {
+  position: absolute;
+  pointer-events: none; }
+
+.prism-previewer,
+.prism-previewer:after {
+  left: 50%; }
+
+.prism-previewer {
+  margin-top: -48px;
+  width: 32px;
+  height: 32px;
+  margin-left: -16px;
+  opacity: 0;
+  -webkit-transition: opacity .25s;
+  -o-transition: opacity .25s;
+  transition: opacity .25s; }
+
+.prism-previewer.flipped {
+  margin-top: 0;
+  margin-bottom: -48px; }
+
+.prism-previewer:before,
+.prism-previewer:after {
+  content: '';
+  position: absolute;
+  pointer-events: none; }
+
+.prism-previewer:before {
+  top: -5px;
+  right: -5px;
+  left: -5px;
+  bottom: -5px;
+  border-radius: 10px;
+  border: 5px solid #fff;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5) inset, 0 0 10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5) inset, 0 0 10px rgba(0, 0, 0, 0.75); }
+
+.prism-previewer:after {
+  top: 100%;
+  width: 0;
+  height: 0;
+  margin: 5px 0 0 -7px;
+  border: 7px solid transparent;
+  border-color: rgba(255, 0, 0, 0);
+  border-top-color: #fff; }
+
+.prism-previewer.flipped:after {
+  top: auto;
+  bottom: 100%;
+  margin-top: 0;
+  margin-bottom: 5px;
+  border-top-color: rgba(255, 0, 0, 0);
+  border-bottom-color: #fff; }
+
+.prism-previewer.active {
+  opacity: 1; }
+
+.prism-previewer-angle:before {
+  border-radius: 50%;
+  background: #fff; }
+
+.prism-previewer-angle:after {
+  margin-top: 4px; }
+
+.prism-previewer-angle svg {
+  width: 32px;
+  height: 32px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
+
+.prism-previewer-angle[data-negative] svg {
+  -webkit-transform: scaleX(-1) rotate(-90deg);
+  -moz-transform: scaleX(-1) rotate(-90deg);
+  -ms-transform: scaleX(-1) rotate(-90deg);
+  -o-transform: scaleX(-1) rotate(-90deg);
+  transform: scaleX(-1) rotate(-90deg); }
+
+.prism-previewer-angle circle {
+  fill: transparent;
+  stroke: #2e3538;
+  stroke-opacity: 0.9;
+  stroke-width: 32;
+  stroke-dasharray: 0, 500; }
+
+.prism-previewer-gradient {
+  background-image: -webkit-linear-gradient(45deg, #bbb 25%, transparent 25%, transparent 75%, #bbb 75%, #bbb), -webkit-linear-gradient(45deg, #bbb 25%, #eee 25%, #eee 75%, #bbb 75%, #bbb);
+  background-image: -o-linear-gradient(45deg, #bbb 25%, transparent 25%, transparent 75%, #bbb 75%, #bbb), -o-linear-gradient(45deg, #bbb 25%, #eee 25%, #eee 75%, #bbb 75%, #bbb);
+  background-image: linear-gradient(45deg, #bbb 25%, transparent 25%, transparent 75%, #bbb 75%, #bbb), linear-gradient(45deg, #bbb 25%, #eee 25%, #eee 75%, #bbb 75%, #bbb);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;
+  width: 64px;
+  margin-left: -32px; }
+
+.prism-previewer-gradient:before {
+  content: none; }
+
+.prism-previewer-gradient div {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 10px;
+  border: 5px solid #fff;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5) inset, 0 0 10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5) inset, 0 0 10px rgba(0, 0, 0, 0.75); }
+
+.prism-previewer-color {
+  background-image: -webkit-linear-gradient(45deg, #bbb 25%, transparent 25%, transparent 75%, #bbb 75%, #bbb), -webkit-linear-gradient(45deg, #bbb 25%, #eee 25%, #eee 75%, #bbb 75%, #bbb);
+  background-image: -o-linear-gradient(45deg, #bbb 25%, transparent 25%, transparent 75%, #bbb 75%, #bbb), -o-linear-gradient(45deg, #bbb 25%, #eee 25%, #eee 75%, #bbb 75%, #bbb);
+  background-image: linear-gradient(45deg, #bbb 25%, transparent 25%, transparent 75%, #bbb 75%, #bbb), linear-gradient(45deg, #bbb 25%, #eee 25%, #eee 75%, #bbb 75%, #bbb);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px; }
+
+.prism-previewer-color:before {
+  background-color: inherit;
+  background-clip: padding-box; }
+
+.prism-previewer-easing {
+  margin-top: -76px;
+  margin-left: -30px;
+  width: 60px;
+  height: 60px;
+  background: #333; }
+
+.prism-previewer-easing.flipped {
+  margin-bottom: -116px; }
+
+.prism-previewer-easing svg {
+  width: 60px;
+  height: 60px; }
+
+.prism-previewer-easing circle {
+  fill: #2e3538;
+  stroke: white; }
+
+.prism-previewer-easing path {
+  fill: none;
+  stroke: white;
+  stroke-linecap: round;
+  stroke-width: 4; }
+
+.prism-previewer-easing line {
+  stroke: white;
+  stroke-opacity: 0.5;
+  stroke-width: 2; }
+
+@-webkit-keyframes prism-previewer-time {
+  0% {
+    stroke-dasharray: 0, 500;
+    stroke-dashoffset: 0; }
+  50% {
+    stroke-dasharray: 100, 500;
+    stroke-dashoffset: 0; }
+  100% {
+    stroke-dasharray: 0, 500;
+    stroke-dashoffset: -100; } }
+
+@-o-keyframes prism-previewer-time {
+  0% {
+    stroke-dasharray: 0, 500;
+    stroke-dashoffset: 0; }
+  50% {
+    stroke-dasharray: 100, 500;
+    stroke-dashoffset: 0; }
+  100% {
+    stroke-dasharray: 0, 500;
+    stroke-dashoffset: -100; } }
+
+@-moz-keyframes prism-previewer-time {
+  0% {
+    stroke-dasharray: 0, 500;
+    stroke-dashoffset: 0; }
+  50% {
+    stroke-dasharray: 100, 500;
+    stroke-dashoffset: 0; }
+  100% {
+    stroke-dasharray: 0, 500;
+    stroke-dashoffset: -100; } }
+
+@keyframes prism-previewer-time {
+  0% {
+    stroke-dasharray: 0, 500;
+    stroke-dashoffset: 0; }
+  50% {
+    stroke-dasharray: 100, 500;
+    stroke-dashoffset: 0; }
+  100% {
+    stroke-dasharray: 0, 500;
+    stroke-dashoffset: -100; } }
+
+.prism-previewer-time:before {
+  border-radius: 50%;
+  background: #fff; }
+
+.prism-previewer-time:after {
+  margin-top: 4px; }
+
+.prism-previewer-time svg {
+  width: 32px;
+  height: 32px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
+
+.prism-previewer-time circle {
+  fill: transparent;
+  stroke: #2e3538;
+  stroke-opacity: 0.9;
+  stroke-width: 32;
+  stroke-dasharray: 0, 500;
+  stroke-dashoffset: 0;
+  -webkit-animation: prism-previewer-time linear infinite 3s;
+  -moz-animation: prism-previewer-time linear infinite 3s;
+  -o-animation: prism-previewer-time linear infinite 3s;
+  animation: prism-previewer-time linear infinite 3s; }
+
+/* Fallback, in case JS does not run, to ensure the code is at least visible */
+[class*='lang-'] script[type='text/plain'],
+[class*='language-'] script[type='text/plain'],
+script[type='text/plain'][class*='lang-'],
+script[type='text/plain'][class*='language-'] {
+  display: block;
+  font: 100% Consolas, Monaco, monospace;
+  white-space: pre;
+  overflow: auto; }
+
+.command-line-prompt {
+  border-right: 1px solid #999;
+  display: block;
+  float: left;
+  font-size: 100%;
+  letter-spacing: -1px;
+  margin-right: 1em;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.command-line-prompt > span:before {
+  color: #999;
+  content: ' ';
+  display: block;
+  padding-right: 0.8em; }
+
+.command-line-prompt > span[data-user]:before {
+  content: "[" attr(data-user) "@" attr(data-host) "] $"; }
+
+.command-line-prompt > span[data-user="root"]:before {
+  content: "[" attr(data-user) "@" attr(data-host) "] #"; }
+
+.command-line-prompt > span[data-prompt]:before {
+  content: attr(data-prompt); }
+
+.token.punctuation.brace-hover,
+.token.punctuation.brace-selected {
+  outline: solid 1px; }
+
+.rainbow-braces .token.punctuation.brace-level-1,
+.rainbow-braces .token.punctuation.brace-level-5,
+.rainbow-braces .token.punctuation.brace-level-9 {
+  color: #E50;
+  opacity: 1; }
+
+.rainbow-braces .token.punctuation.brace-level-2,
+.rainbow-braces .token.punctuation.brace-level-6,
+.rainbow-braces .token.punctuation.brace-level-10 {
+  color: #0B3;
+  opacity: 1; }
+
+.rainbow-braces .token.punctuation.brace-level-3,
+.rainbow-braces .token.punctuation.brace-level-7,
+.rainbow-braces .token.punctuation.brace-level-11 {
+  color: #26F;
+  opacity: 1; }
+
+.rainbow-braces .token.punctuation.brace-level-4,
+.rainbow-braces .token.punctuation.brace-level-8,
+.rainbow-braces .token.punctuation.brace-level-12 {
+  color: #E0E;
+  opacity: 1; }
+
+pre.diff-highlight > code .token.deleted:not(.prefix),
+pre > code.diff-highlight .token.deleted:not(.prefix) {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: inherit;
+  display: block; }
+
+pre.diff-highlight > code .token.inserted:not(.prefix),
+pre > code.diff-highlight .token.inserted:not(.prefix) {
+  background-color: rgba(0, 255, 128, 0.1);
+  color: inherit;
+  display: block; }
+
+pre[rel]::before {
+  font-size: 1em;
+  font-weight: bold;
+  content: attr(rel);
+  color: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: grey;
+  padding: .5em 0;
+  text-indent: 1rem;
+  margin-bottom: .5em; }
+
+pre[rel="CSS"]::before, pre[rel="SCSS"]::before {
+  color: white;
+  background: blue; }
+
+pre[rel="HTML"]::before, pre[rel="PUG"]::before {
+  color: white;
+  background: darkorange; }
+
+pre[rel="jQuery"]::before, pre[rel="JavaScript"]::before, pre[rel="JSX"]::before {
+  color: white;
+  background: darkorange; }
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 3em 0 1em 0; }
+
+.line-highlight {
+  margin-top: 3em;
+  /* Same as .prism’s padding-top */ }
+
+/* Separate line b/c rules are thrown out if selector is invalid.
+   IE11 and old Edge versions don't support :focus-within. */
+div.code-toolbar > .toolbar a,
+div.code-toolbar > .toolbar button,
+div.code-toolbar > .toolbar span {
+  color: white;
+  font-size: .8em;
+  font-weight: bold;
+  padding: 0 .5em;
+  background: black; }
+
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* NUEVO CÓDIGO
+-------------------------------------------- 
+Código para este proyecto
+-------------------------------------------- */
+/* end NUEVO CÖDIGO  */
+/* PREVIOUS CODE
+--------------------------------------------
+Código del proyecto anterior
+--------------------------------------------*/
+/* end PREVIOUS CODE   */
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* NUEVO CÓDIGO
+-------------------------------------------- 
+[Una Introducción a los Mapas Sass: Uso y Ejemplos](https://webdesign.tutsplus.com/es/tutorials/an-introduction-to-sass-maps-usage-and-examples--cms-22184)
+-------------------------------------------- */
+/* end NUEVO CÖDIGO  */
+/* PREVIOUS CODE
+--------------------------------------------
+Código del proyecto anterior
+--------------------------------------------*/
+/* end PREVIOUS CODE   */
+.rbl-tooltip {
+  z-index: 15; }
+
+.rbl-dropdown {
+  z-index: 10; }
+
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* NUEVO CÓDIGO
+-------------------------------------------- 
+Código para este proyecto
+-------------------------------------------- */
+/* end NUEVO CÖDIGO  */
+/* PREVIOUS CODE
+--------------------------------------------
+Código del proyecto anterior
+--------------------------------------------*/
+/* end PREVIOUS CODE   */
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* NUEVO CÓDIGO
+-------------------------------------------- 
+Código para este proyecto
+-------------------------------------------- */
+/* end NUEVO CÖDIGO  */
+/* PREVIOUS CODE
+--------------------------------------------
+Código del proyecto anterior
+--------------------------------------------*/
+/* end PREVIOUS CODE   */
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* NUEVO CÓDIGO
+-------------------------------------------- 
+Código para este proyecto
+-------------------------------------------- */
+/* end NUEVO CÖDIGO  */
+/* PREVIOUS CODE
+--------------------------------------------
+Código del proyecto anterior
+--------------------------------------------*/
+/* .main_main{
+  width: 90%;
+  // margin: 0 auto;
+  h1{
+    background-color: transparent;
+  }
+} */
+/* end PREVIOUS CODE   */
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* NUEVO CÓDIGO
+-------------------------------------------- 
+Código para este proyecto
+-------------------------------------------- */
+/* end NUEVO CÖDIGO  */
+/* PREVIOUS CODE
+--------------------------------------------
+Código del proyecto anterior
+--------------------------------------------*/
+/* end PREVIOUS CODE   */
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* NUEVO CÓDIGO
+-------------------------------------------- 
+Código para este proyecto
+-------------------------------------------- */
+.rbl-button {
+  display: inline-block;
+  padding: .5em; }
+  .rbl-button--error {
+    background-color: #d82d2d;
+    color: #666; }
+  .rbl-button--success {
+    background-color: #52bf4a;
+    color: #fff; }
+  .rbl-button--warning {
+    background-color: #c23435;
+    color: #ff2; }
+
+/* end NUEVO CÖDIGO  */
+/* PREVIOUS CODE
+--------------------------------------------
+Código del proyecto anterior
+--------------------------------------------*/
+/* end PREVIOUS CODE   */
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* NUEVO CÓDIGO
+-------------------------------------------- 
+Código para este proyecto
+-------------------------------------------- */
+/* end NUEVO CÖDIGO  */
+/* PREVIOUS CODE
+--------------------------------------------
+Código del proyecto anterior
+--------------------------------------------*/
+/* end PREVIOUS CODE   */
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* NUEVO CÓDIGO
+-------------------------------------------- 
+Código para este proyecto
+-------------------------------------------- */
+/* end NUEVO CÖDIGO  */
+/* PREVIOUS CODE
+--------------------------------------------
+Código del proyecto anterior
+--------------------------------------------*/
+/* 
+.grid-gallery {
+  display: grid;
+  grid-auto-rows: 200px;
+  grid-gap: 1rem;
+  grid-auto-flow: row dense;
+}
+
+@media all and (min-width: 320px) {
+  .grid-gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media all and (min-width: 768px) {
+  .grid-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .grid-gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.grid-gallery__item:nth-child(11n+1) {
+  grid-column: span 1;
+}
+
+.grid-gallery__item:nth-child(11n+4) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.grid-gallery__item:nth-child(11n+6) {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+.grid-gallery__item:nth-child(11n+7) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.grid-gallery__item:nth-child(11n+8) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.grid-gallery__item:nth-child(11n+9) {
+  grid-row: span 3;
+}
+
+.grid-gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} 
+*/
+/* end PREVIOUS CODE   */
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* NUEVO CÓDIGO
+-------------------------------------------- 
+Código para este proyecto
+-------------------------------------------- */
+/* end NUEVO CÖDIGO  */
+/* PREVIOUS CODE
+--------------------------------------------
+Código del proyecto anterior
+--------------------------------------------*/
+/* end PREVIOUS CODE   */
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* NUEVO CÓDIGO
+-------------------------------------------- 
+Código para este proyecto
+-------------------------------------------- */
+/* end NUEVO CÖDIGO  */
+/* PREVIOUS CODE
+--------------------------------------------
+Código del proyecto anterior
+--------------------------------------------*/
+/* 
+article.card{
+  background-color: grey;
+  position: relative;
+  margin: .5em;
+  border: 1px solid var(--color_light);
+  
+  .card__img_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    header{
+      font-size: .9em;
+    }
+  }
+} 
+ */
+/* end PREVIOUS CODE   */
+/* 
+
+*/
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* NUEVO CÓDIGO
+-------------------------------------------- 
+Código para este proyecto
+-------------------------------------------- */
+.rating_star {
+  border: 1px solid black;
+  display: inline-block;
+  margin: 0 .5em; }
+  .rating_star a {
+    color: grey; }
+    .rating_star a.selected {
+      color: black; }
+
+/* end NUEVO CÖDIGO  */
+/* PREVIOUS CODE
+--------------------------------------------
+Código del proyecto anterior
+--------------------------------------------*/
+/* end PREVIOUS CODE   */
+/* DESCOMENTAR PARA COMPROBAR QUE EL ARCHIVO FUNCIONA */
+/* NUEVO CÓDIGO
+-------------------------------------------- 
+Código para este proyecto
+-------------------------------------------- */
+.section_rbl {
+  padding: 0;
+  margin: 0; }
+  .section_rbl .rbl_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch; }
+    .section_rbl .rbl_container .rbl_item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+      justify-content: stretch;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch; }
+      .section_rbl .rbl_container .rbl_item .rbl_item__header {
+        width: 100%; }
+      .section_rbl .rbl_container .rbl_item .rbl_item__main {
+        padding: 0 .5em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+        flex-grow: 2; }
+      .section_rbl .rbl_container .rbl_item .rbl_item__footer {
+        padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: distribute;
+        justify-content: space-around; }
+
+.s12 {
+  width: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%; }
+
+@media only screen and (min-width: 601px) {
+  .m4 {
+    width: 33.33%;
+    -ms-flex-preferred-size: 33.33%;
+    flex-basis: 33.33%; }
+  .m6 {
+    width: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%; } }
+
+@media only screen and (min-width: 1201px) {
+  .xl4 {
+    -ms-flex-preferred-size: 33.33%;
+    flex-basis: 33.33%;
+    width: 33.33%; }
+  .xl6 {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    width: 50%; } }
+
+.cv .material-icons {
+  margin: 2rem 0;
+  color: var(--color);
+  font-size: 7rem;
+  display: block; }
+
+.cv .cv__caption {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 0; }
+
+.cv .cv__example {
+  overflow: hidden; }
+
+.center {
+  text-align: center;
+  vertical-align: middle; }
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.container {
+  width: 98%; }
+  @media only screen and (min-width: 601px) {
+    .container {
+      width: 95%; } }
+  @media only screen and (min-width: 993px) {
+    .container {
+      width: 90%; } }
+
+@media only screen and (min-width: 601px) {
+  main > .container,
+  body > .page-footer > .container,
+  .top-nav > .container,
+  #index-banner > .container,
+  .github-commit > .container {
+    width: 99.5%; } }
+
+main {
+  border: 1px solid black;
+  padding-left: 270px; }
+
+@media only screen and (max-width: 992px) {
+  main {
+    padding-left: 0; } }
+
+/* end NUEVO CÖDIGO  */
+/* PREVIOUS CODE
+--------------------------------------------
+Código del proyecto anterior
+--------------------------------------------*/
+/* end PREVIOUS CODE   */

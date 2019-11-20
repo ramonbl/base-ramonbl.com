@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .botonMenu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 3rem;
+      height: 3rem;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background-color: #99B2B7;
+      border: 0;
+      color: white;
+      cursor: pointer;
+    }
+
+    .botonMenu:focus {
+      outline: none;
+    }
+
+    .botonMenu:focus+.principal {
+      transform: translateX(0rem);
+    }
+
+    nav.principal {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 15rem;
+      background-color: #7A6A53;
+      transform: translateX(15rem);
+      transition: 1s all;
+    }
+
+    nav.principal ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    nav.principal a {
+      display: block;
+      color: #D5DED9;
+      padding: 1rem;
+      transition: .5s all;
+    }
+
+    nav.principal a:hover {
+      text-decoration: none;
+      background-color: #948C75;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <button class="botonMenu">
+      <i class="fa fa-bars"></i>
+    </button>
+    <nav class="principal">
+      <ul>
+        <li><a href="#">Lorem.</a></li>
+        <li><a href="#">Soluta!</a></li>
+        <li><a href="#">Reprehenderit.</a></li>
+        <li><a href="#">Nulla!</a></li>
+        <li><a href="#">Ipsum.</a></li>
+      </ul>
+    </nav>
+  </header>
+</body>
+
+</html>

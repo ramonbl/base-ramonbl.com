@@ -1,0 +1,146 @@
+//- # Para crear estructuras usamos EXTENDS (no include)
+
+
+extends config/template_index
+
+prepend COMMENTS
+  // Comentarios prepend desde `index`
+  // --- página: INDEX ---
+  // end COMMENTS desde `index`
+  |
+  |
+//- # Modificamos las variables globales añadiendo al archivo config.
+append CONFIG
+  // append CONFIG desde `index.pug`
+  - pageTitle = 'Home (index)'
+  - currentPage = 'index'
+  // end append CONFIG
+
+//- # Añadimos metas al block metasPropios
+append METAS_PROPIOS
+  // append METAS_PROPIOS desde `index.pug`
+  // end append METAS_PROPIOS
+
+
+//- # Añadimos links al block styles
+append STYLES
+  // append STYLES desde `index.pug`
+  //- link(rel="stylesheet" href=`css/${currentPage.toLowerCase().split(' ').join('_')}.css` )
+  // end append STYLES
+
+
+//- ------------------------- MAIN_BANNER ------------------------------
+
+//- # Descomentar para preañadir, sustituir (o eliminar) o postañadir al MAIN-BANNER por defecto
+//- block|prepend|append MAIN_BANNER
+  // block|prepend|append MAIN_BANNER desde `index.pug`
+  // end block|prepend|append MAIN_BANNER
+
+
+//- ------------------------- MAIN_HEADER ------------------------------
+
+//- # Descomentar para preañadir, sustituir (o eliminar) o postañadir al MAIN-HEADER por defecto
+//- block|prepend|append MAIN_HEADER
+  // block|prepend|append MAIN_HEADER desde `index.pug`
+  // end block|prepend|append MAIN_HEADER
+
+
+//- ------------------------- MAIN_NAV ------------------------------
+
+//- # Descomentar para preañadir, sustituir (o eliminar) o postañadir al MAIN-NAV por defecto
+block MAIN_NAV
+  // block MAIN_HEADER desde `index.pug`
+  // end  MAIN_HEADER desde `index.pug`
+
+
+//- --------------------- MAIN_MAIN ---------------------------------------
+
+block MAIN_MAIN
+  // - sustituido por: block MAIN_MAIN desde `index.pug` - 
+  p= `MAIN_MAIN--${pageTitle}`
+
+  section.container
+    h2 Controlador de audio / video
+    +audio_controls("audios", "audio1", "")
+  section.container
+
+
+  h2 Manuales 2
+  
+
+  ul
+    li.li
+      // MIXIN botons
+      +boton('html/man-css/index.html', 'Ir a MAN-CSS', '')
+    li.li
+
+  h2 Cards
+    // +CARD
+    +card("assets/img/img1.png", "título de img1", "descripción de la imagen 1")
+      block CONTENT_CARD
+        //block CONTENT_CARD
+        //end CONTENT_CARD
+    // +CARD
+    +card("assets/img/img2.png", "título de img2", "descripción de la imagen 2")
+      block CONTENT_CARD
+        //block CONTENT_CARD
+        //end CONTENT_CARD
+
+  h2 RATING
+
+  p.strong CSSs
+    span.rating_star
+      a(href="#" class="selected") &#9733;
+      a(href="#" class="selected") &#9733;
+      a(href="#" class="selected") &#9733;
+      a(href="#") &#9733;
+      a(href="#") &#9733;
+  
+  p.strong HTML
+    +rating("star", 7, 3)
+
+
+  h2 Código 2
+
+  <pre rel="CSS" class="line-numbers" data-start="2" data-line="3, 5-7"style="white-space: pre-wrap"><code class="language-css">
+    | 
+    | div {
+    |   src = url(http://www.opensource.org/licenses/mit-license.php/);
+    |   border: 40px solid transparent;
+    |   border-image: 33.334% url('data:image/svg+xml,&lt;svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"&gt; \
+    |                         &lt;circle cx="5" cy="5" r="5" fill="%23ab4"/&gt;&lt;circle cx="15" cy="5" r="5" fill="%23655"/&gt; \
+    |                         &lt;circle cx="25" cy="5" r="5" fill="%23e07"/&gt;&lt;circle cx="5" cy="15" r="5" fill="%23655"/&gt; \
+    |                         &lt;circle cx="15" cy="15" r="5" fill="hsl(15, 25%, 75%)"/&gt; \
+    |                         &lt;circle cx="25" cy="15" r="5" fill="%23655"/&gt;&lt;circle cx="5" cy="25" r="5" fill="%23fb3"/&gt; \
+    |                         &lt;circle cx="15" cy="25" r="5" fill="%23655"/&gt;&lt;circle cx="25" cy="25" r="5" fill="%2358a"/&gt;&lt;/svg&gt;');
+    |   padding: 1em;
+    |   max-width: 20em;
+    |   font: 130%/1.6 Baskerville, Palatina, serif;
+    | }
+  </code></pre>
+
+  h2 Código con File Highlight
+  //- <pre data-src="prueba.html" rel="HTML" class="line-numbers" data-start="2" 
+
+  // --- end block MAIN_MAIN de `index.pug` ---
+  //- --------------------- end MAIN_MAIN ---------------------------------------
+
+
+//- ------------------------- MAIN_FOOTER------------------------------
+
+//- # Descomentar para preañadir, sustituir (o eliminar) o postañadir al MAIN-NAV por defecto
+//- block|prepend|append MAIN_FOOTER
+  // block|prepend|append MAIN_FOOTER desde `index.pug`
+  // end block|prepend|append MAIN_FOOTER
+
+
+//- ------------------------- FINAL_SCRIPTS------------------------------
+//- # Descomentar para preañadir, sustituir (o eliminar) o postañadir al SCRIPTS por defecto
+//- prepend FINAL_SCRIPTS
+//- block FINAL_SCRIPTS
+append FINAL_SCRIPTS
+  // append FINAL_SCRIPTS desde `index.pug`
+  //- <script type='text/javascript' src='js/prism.js'></script>
+  // end append FINAL_SCRIPTS
+
+

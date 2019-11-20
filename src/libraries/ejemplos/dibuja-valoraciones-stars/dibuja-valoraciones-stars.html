@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <style>
+    :root {
+      --color-inactivo: #5f5050;
+      --color-activo: #ffa400;
+    }
+
+    .valoracion {
+      display: flex;
+      width: min-content;
+      /* background-color: pink; */
+      /* border: 1px solid var(--color-inactivo); */
+    }
+
+    .valoracion__star {
+      background-color: initial;
+      margin: 0;
+      padding: 0;
+      flex-basis:auto;
+      font-size: 1.4em;
+      border: 0;
+      color: var(--color-inactivo);
+    }
+
+
+
+    .valoracion__star--ok {
+      color: var(--color-activo);
+
+    }
+
+    /* .valoracion__star:hover {
+      cursor: pointer;
+      color: var(--color-hover);
+    } */
+
+
+  </style>
+</head>
+
+<body>
+  <div class="valoracion">
+
+    <!-- Estrella 1 -->
+    <button class="btn valoracion__star valoracion__star--ok"><i class="fas fa-star"></i></button>
+
+    <!-- Estrella 2 -->
+    <button class="btn valoracion__star valoracion__star--ok"><i class="fas fa-star"></i></button>
+
+    <!-- Estrella 3 -->
+    <button class="btn valoracion__star valoracion__star--ok"><i class="fas fa-star"></i></button>
+
+    <!-- Estrella 4 -->
+    <button class="btn valoracion__star">
+      <i class="fas fa-star"></i>
+    </button>
+
+    <!-- Estrella 5 -->
+    <button class="btn valoracion__star">
+      <i class="fas fa-star"></i>
+    </button>
+
+  </div>
+</body>
+
+</html>

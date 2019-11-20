@@ -1,0 +1,22 @@
+
+//- ---------------- MENU AUTOMATIZADO -----------
+
+- var menu = { 'Home': '#', 'CV': '#', 'ramonbl.com': '#' };
+
+ul
+  
+  figure.menu_hamburguesa
+    img(src="assets/img/menu.svg" class="menu_hamburguesa")
+
+  each val, key in menu
+    - var target = val === 'https://ramonbl.com' ? '"_blank"' : ''
+    li(itemprop="url")
+      a(href=val target=target itemprop="name" title= "Enlace de " + key)= key
+    |
+    |
+
+
+// end `includes/main_nav`
+
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .demo input[type="radio"] {
+      display: none;
+    }
+
+    .demo input[type="radio"]+label span {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin: -1px 4px 0 0;
+      vertical-align: middle;
+      background: url(img/radio-uncheck.png);
+      background-size: cover;
+      cursor: pointer;
+    }
+
+    .demo input[type="radio"]:checked+label span {
+      background: url(img/radio-check.png);
+      background-size: cover;
+    }
+
+    .demo input[type="checkbox"] {
+      display: none;
+    }
+
+    .demo input[type="checkbox"]+label span {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin: -1px 4px 0 0;
+      vertical-align: middle;
+      background: url(img/checkbox-uncheck.png);
+      background-size: cover;
+      cursor: pointer;
+    }
+
+    .demo input[type="checkbox"]:checked+label span {
+      background: url(img/checkbox-check.png);
+      background-size: cover;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="demo">
+    <p>
+      <input type="radio" id="genero__mujer" name="genero" checked>
+      <label for="genero__mujer"><span></span>Mujer</label>
+    </p>
+    <p>
+      <input type="radio" id="genero__hombre" name="genero">
+      <label for="genero__hombre"><span></span>Hombre</label>
+    </p>
+  </div>
+
+  <div class="demo">
+    <input type="checkbox" id="acepto" name="acepto" checked>
+    <label for="acepto"><span></span>Acepto todas las condiciones</label>
+  </div>
+
+</body>
+
+</html>

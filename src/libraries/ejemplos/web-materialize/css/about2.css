@@ -1,0 +1,135 @@
+:root {
+  --color: #ee6e73; }
+
+.container {
+  width: 98%;
+  background-color: lightgrey; }
+  @media only screen and (min-width: 601px) {
+    .container {
+      background-color: lightcoral;
+      width: 95%; } }
+  @media only screen and (min-width: 993px) {
+    .container {
+      background-color: lightgreen;
+      width: 90%; } }
+
+@media only screen and (min-width: 601px) {
+  main > .container,
+  body > .page-footer > .container,
+  .top-nav > .container,
+  #index-banner > .container,
+  .github-commit > .container {
+    width: 99.5%; } }
+
+.row {
+  background-color: lightblue; }
+  .row .col {
+    border: 2px solid red; }
+
+main {
+  border: 1px solid black;
+  padding-left: 300px; }
+
+@media only screen and (max-width: 992px) {
+  main {
+    padding-left: 0; } }
+
+.toc {
+  border: 1px solid red; }
+
+.section_rbl {
+  padding: 0;
+  margin: 0; }
+  .section_rbl .rbl_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch; }
+    .section_rbl .rbl_container .rbl_item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+      justify-content: stretch;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch; }
+      .section_rbl .rbl_container .rbl_item .rbl_item__header {
+        width: 100%; }
+      .section_rbl .rbl_container .rbl_item .rbl_item__main {
+        padding: 0 0.5em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+        flex-grow: 2; }
+      .section_rbl .rbl_container .rbl_item .rbl_item__footer {
+        padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: distribute;
+        justify-content: space-around; }
+
+.cv .material-icons {
+  margin: 2rem 0;
+  color: var(--color);
+  font-size: 7rem;
+  display: block; }
+
+.cv .cv__caption {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 0; }
+
+.cv .cv__example {
+  overflow: hidden; }
+
+.center {
+  text-align: center;
+  vertical-align: middle; }
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.light {
+  font-weight: 300; }
+
+.thin {
+  font-weight: 200; }
+
+strong {
+  font-weight: 500; }
+
+.jc-space_between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }

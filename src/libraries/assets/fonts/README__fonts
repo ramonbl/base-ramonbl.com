@@ -1,0 +1,11 @@
+[Cómo convertir tus iconos en una fuente](https://www.40defiebre.com/como-convertir-iconos-fuente)
+
+css
+@font-face { font-family: '40df'; src:url('fonts/40df.eot'); src:url('fonts/40df.eot?#iefix') format('embedded-opentype'), url('fonts/40df.woff') format('woff'), url('fonts/40df.ttf') format('truetype'), url('fonts/40df.svg#icomoon') format('svg'); font-weight: normal; font-style: normal; }
+
+clases
+.icon-twitter:before { content: "\e000"; } .icon-facebook:before { content: "\e001"; } .icon-dribbble:before { content: "\e002"; }
+
+html
+<span class="icon-twitter"></span> Twitter
+

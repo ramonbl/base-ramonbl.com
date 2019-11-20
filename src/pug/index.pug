@@ -1,0 +1,63 @@
+//- # Para crear estructuras usamos EXTENDS (no include)
+
+
+extends config/template_index
+
+prepend COMMENTS
+  // Comentarios prepend desde `index`
+  // --- página: INDEX ---
+  // end COMMENTS desde `index`
+  |
+  |
+//- # Modificamos las variables globales añadiendo al archivo config.
+append CONFIG
+  // append CONFIG desde `index.pug`
+  - pageTitle = 'Home (index)'
+  - currentPage = 'index'
+  // end append CONFIG
+
+
+
+//- ------------------------- MAIN_BANNER ------------------------------
+
+//- # Descomentar para preañadir, sustituir (o eliminar) o postañadir al MAIN-BANNER por defecto
+//- block|prepend|append MAIN_BANNER
+  // block|prepend|append MAIN_BANNER desde `index.pug`
+  // end block|prepend|append MAIN_BANNER
+
+
+//- ------------------------- MAIN_HEADER ------------------------------
+
+//- # Descomentar para preañadir, sustituir (o eliminar) o postañadir al MAIN-HEADER por defecto
+//- block|prepend|append MAIN_HEADER
+  // block|prepend|append MAIN_HEADER desde `index.pug`
+  // end block|prepend|append MAIN_HEADER
+
+
+//- ------------------------- MAIN_NAV ------------------------------
+
+//- # Descomentar para preañadir, sustituir (o eliminar) o postañadir al MAIN-NAV por defecto
+
+
+  // --- end block MAIN_MAIN de `index.pug` ---
+  //- --------------------- end MAIN_MAIN ---------------------------------------
+
+
+//- ------------------------- MAIN_FOOTER------------------------------
+
+//- # Descomentar para preañadir, sustituir (o eliminar) o postañadir al MAIN-NAV por defecto
+//- block|prepend|append MAIN_FOOTER
+  // block|prepend|append MAIN_FOOTER desde `index.pug`
+  // end block|prepend|append MAIN_FOOTER
+
+
+//- ------------------------- FINAL_SCRIPTS------------------------------
+//- # Descomentar para preañadir, sustituir (o eliminar) o postañadir al SCRIPTS por defecto
+//- prepend FINAL_SCRIPTS
+//- block FINAL_SCRIPTS
+//- append FINAL_SCRIPTS
+  // append FINAL_SCRIPTS desde `index.pug`
+  //- <script type='text/javascript' src='js/prism.js'></script>
+  // end append FINAL_SCRIPTS
+
+

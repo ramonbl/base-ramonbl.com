@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Entendiendo el posicionamiento sticky - campusMVP</title>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,500,600,700" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1rem;
+            background-color: #f2f3f4;
+            margin:0;
+            padding:0;
+        }
+        header {
+            background-color: #00324b;
+            display:flex;
+            color:#fff;
+            flex-direction: row;
+            align-items: center;
+            align-content:space-around;            
+        }
+        img {
+            border: 0;
+        }
+
+        h1 {
+            font-size:1.5rem;
+            flex-grow:2;
+            font-weight: normal;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        .logo {
+            background: #00324b;
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            flex-grow:1;
+        }
+
+        .logo a {
+            text-decoration-color: #00324b;border:0;outline: none;
+        }
+
+        main {
+            padding:50px 20px;
+        }
+
+        main a {
+            position: sticky;
+            top:80px;
+            border:10px solid #1B75CE;
+            display:inline-block;
+        }
+
+        main a::after {
+            background-color:#1B75CE;
+            color:#fff;
+            content:"<a>";
+            display:inline-block;
+            position:absolute;
+            padding:10px;
+            bottom:-10px;
+            left:-10px;
+            line-height:1;
+        }
+
+        main a img {
+            display: block;
+        }
+    
+        main div { 
+            border: 10px solid #ff9900;
+            position:relative;
+            line-height: 0;
+        }
+
+        main div::before {
+            background-color:#ff9900;
+            color:#fff;
+            content:"<div>";
+            position:absolute;
+            top:-10px;
+            right:-5px;
+            z-index: 100;
+            padding:5px 10px;
+            box-sizing: border-box;
+            display:inline-block;
+            line-height:2;
+        }
+
+        main > div {
+            margin:5px;
+        }
+
+        main div div { 
+            border: 10px solid green;
+        }
+
+        main div div::before { 
+            background-color:green;
+            top:-10px;
+            left:-10px;
+            right: auto;
+        }
+
+
+        .div2 {
+            height:600px;
+        }
+
+
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="https://www.campusmvp.es">
+            <img src="img/logo-campusmvp.png" alt="logo de campusmvp" />
+        </a>
+        <h1>Posicionamiento sticky en CSS - campusMVP</h1>
+    </header>
+    <main>
+
+        <a href="https://www.campusmvp.es/catalogo">
+            <img src="img/cursos-programacion.png" alt="logo de campusmvp" />
+        </a>
+        
+
+        <div class="div1">
+            <a href="https://www.campusmvp.es/catalogo">
+                <img src="img/cursos-programacion.png" alt="logo de campusmvp" />
+            </a>
+        </div>
+
+        <div class="div2">
+            <a href="https://www.campusmvp.es/catalogo">
+                <img src="img/cursos-programacion.png" alt="logo de campusmvp" />
+            </a>
+        </div>
+        <section>
+        <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar facilisis velit, et fringilla nunc facilisis et. Sed nec blandit augue. Aenean semper odio vel purus feugiat vulputate. Duis aliquet ipsum orci, accumsan commodo libero vehicula vitae. Fusce maximus elit ut mi tincidunt laoreet. Nam eget dignissim turpis. Quisque quis dui ex. Curabitur elementum egestas mi.
+            </p>
+            <p>
+                Sed ultrices neque non ipsum tincidunt, quis sodales metus convallis. Mauris sodales ac urna eu fringilla. In accumsan imperdiet auctor. Donec quam ex, consequat sit amet lobortis tempor, eleifend non ligula. Praesent sollicitudin euismod ipsum, ac tempor lectus. Morbi feugiat sapien orci, nec condimentum nisi egestas sit amet. Phasellus ullamcorper ligula odio, at interdum augue efficitur et.
+            </p>
+            <p>
+                Sed hendrerit et lacus dapibus accumsan. Cras neque est, facilisis ac dui ut, rhoncus aliquet ipsum. Aliquam quis ligula id ligula aliquet consequat vel congue tellus. Donec lacinia orci vitae finibus iaculis. Integer libero mauris, rhoncus quis nibh semper, dapibus dignissim elit. Cras vestibulum, dolor at efficitur volutpat, massa nunc pulvinar lacus, quis ultrices erat nunc maximus nibh. Duis rutrum leo non malesuada viverra. Nam justo mauris, suscipit vitae faucibus in, pellentesque eget metus. Phasellus quis vehicula velit. Proin sapien erat, facilisis non justo vel, sagittis accumsan arcu. Nullam at magna in dui convallis consectetur eget sit amet augue.
+            </p>
+            <p>
+                In ultrices sit amet odio ut ultrices. Duis nec erat mollis nibh placerat auctor. Vestibulum tellus dolor, iaculis eget felis vel, interdum blandit risus. In viverra a erat id maximus. Morbi elementum aliquet augue nec dapibus. Suspendisse interdum dolor sed ornare ornare. Praesent dolor libero, facilisis at mauris sit amet, porta interdum nisl. Donec aliquet sollicitudin justo, ultrices ullamcorper massa ullamcorper sed. Aliquam sodales libero elit, sit amet volutpat orci pulvinar ut. Nam viverra luctus eros, at mollis mi cursus non. Aliquam sit amet tincidunt nunc, a maximus ligula. Ut commodo aliquet augue, ut dictum turpis faucibus vel. Donec sit amet consequat diam. Cras posuere facilisis bibendum.
+            </p>
+            <p>
+                In hac habitasse platea dictumst. In scelerisque sodales leo. Donec pretium porttitor turpis. Vestibulum eu massa quis sapien rhoncus congue. Praesent blandit, nibh non commodo suscipit, nisi urna tristique ligula, sit amet feugiat felis lacus sed mauris. Suspendisse nisl massa, scelerisque id augue eget, congue fringilla quam. Donec et augue tempus, ornare turpis a, vehicula magna. Phasellus sed tellus pretium, semper nisi quis, imperdiet nulla. Integer aliquam arcu sed lacus molestie, et facilisis leo malesuada. Nam condimentum, nisl laoreet ullamcorper mattis, nisl orci aliquet velit, vel rhoncus diam velit id odio. Proin at ligula non lectus tristique condimentum. Praesent porttitor augue eget nunc egestas, sit amet tempus elit rhoncus. In placerat, urna in mollis consequat, nibh justo dictum augue, ut vestibulum sem quam vitae massa.
+            </p>
+            <p>
+                Nunc neque nunc, cursus elementum tempus ac, dignissim quis diam. Donec vitae mi ac nulla tincidunt semper. Fusce tempus ligula quis dapibus mattis. Donec et pretium massa. Quisque fringilla dictum sem, sit amet maximus mauris dapibus ut. Morbi vestibulum porta faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque erat magna, blandit sed massa in, condimentum commodo libero. Donec at molestie risus. Duis sollicitudin iaculis mauris et rhoncus. Phasellus efficitur, lacus eget finibus facilisis, neque sapien ultricies purus, eget fringilla massa sapien laoreet magna. Quisque ac felis justo.
+            </p>
+            <p>
+                Maecenas aliquet aliquet metus, a commodo risus sodales nec. Vestibulum condimentum sem at sollicitudin commodo. Fusce augue elit, fringilla sit amet magna ut, posuere aliquet ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur ultrices quis velit at commodo. Maecenas blandit lorem quis purus molestie aliquam. Suspendisse sit amet volutpat metus, in malesuada magna. Etiam tincidunt, diam ut scelerisque ultricies, orci enim convallis leo, vitae semper est mi a lectus. Praesent consequat, mi a ornare auctor, nunc erat porta urna, eget mollis quam libero sit amet metus. Cras ac pretium nisi. Curabitur mollis felis vehicula, accumsan sapien tincidunt, aliquam ligula. Suspendisse id varius velit, ac vulputate lorem.
+            </p>
+            <p>
+                Donec vel congue elit, et bibendum arcu. Aenean blandit magna ac enim vulputate, in congue lectus ultricies. Morbi eu felis ut diam fermentum pellentesque. Donec posuere vulputate lacus eu dapibus. Pellentesque posuere erat sit amet sapien iaculis luctus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque lorem diam, luctus eu arcu nec, hendrerit elementum enim. Etiam risus tellus, auctor ut ante sit amet, lacinia interdum ante. Cras ultricies mattis massa, vitae condimentum lectus luctus in. Vestibulum ornare ligula vel dolor tincidunt vestibulum.
+            </p>
+            <p>
+                Maecenas ullamcorper dignissim metus, quis scelerisque purus ultricies et. Nulla dictum sodales nisi at volutpat. Morbi luctus quis libero euismod euismod. Proin faucibus augue ornare tellus interdum, id viverra mi vehicula. Cras volutpat aliquam luctus. Praesent fringilla ultrices risus, vitae viverra velit tempor id. Praesent porta, turpis nec pretium rutrum, risus metus tincidunt nisl, id dapibus neque ex at ex. Vestibulum mattis nisl nec eros mattis sollicitudin. Vivamus leo enim, sodales vitae eros eu, vehicula vehicula mi. Curabitur aliquam augue ante, in gravida tortor aliquet a. Suspendisse id erat vel augue accumsan faucibus. Maecenas egestas hendrerit ligula vitae vulputate. Donec tempor fringilla ligula a vestibulum.
+            </p>
+            <p>
+                Etiam sit amet tempor justo, ac auctor enim. Phasellus fermentum metus ac mi commodo hendrerit. Donec augue dui, mollis ut tincidunt eu, scelerisque sed ipsum. Praesent pulvinar velit ut magna lacinia, at laoreet lectus commodo. Etiam posuere fringilla nulla vel euismod. Nulla vestibulum consectetur leo quis malesuada. Proin et nisl elit. Nam et lorem sem. Suspendisse scelerisque congue nunc, id rhoncus erat mattis ut. Etiam sed quam mattis lorem mattis viverra et eu urna. Aenean placerat tellus et condimentum luctus. Curabitur sed arcu lorem. Phasellus eget ullamcorper sapien, eu tempor mauris.
+            </p>
+        </section>
+    </main>
+
+</body>
+
+</html>

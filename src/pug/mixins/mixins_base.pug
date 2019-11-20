@@ -1,0 +1,64 @@
+//- MIXINS PARA TODAS LAS PÁGINAS WEB DEL SITIO
+
+
+mixin boton(url, texto, clases)
+  a(href= `${url}` alt= `${texto}` class=`${clases}`)= `${texto}`
+
+  // end mixin boton
+//- descomentar para ver la compilación en `./dist` 
+//- // mixin boton("http://www.google.es", "Google", "boton")
+
+//- +boton("http://www.google.es", "Google", "boton btn")
+
+|
+|
+mixin card(image, title,  description)
+  article.card
+    .card__img_container
+      header.header_card
+        h3.card__title= `${title}`
+      main.main_card  
+        figure
+          figcaption= `${title}`
+          img(src= `${image}` alt= `${description}`)
+
+        // block CONTENT_CARD article.card  
+        block CONTENT_CARD 
+        // end block CONTENT_CARD article.card
+      footer.footer_card 
+        p.card__descript= `${description}`
+  // end mixin card
+
+// end MIXINS_BASES
+|
+|
+mixin rating(letra, num, numOk)
+  span.rating_star
+    if letra==="star"
+      - for(let i=1; i<num; i++)
+        if i< (numOk+1)
+          a(href="#" class="selected") &#9733;
+        else
+          a(href="#") &#9733;
+
+//- //- +rating("&#9733;")
+
+mixin audio_controls(dir_audio, name_audio, clases)
+  audio(controls)
+    source(src= `${dir_audio}/${name_audio}.ogg` type="audio/ogg")
+    source(src= `${dir_audio}/${name_audio}.mp3` type="audio/mpeg")
+    source(src= `${dir_audio}/${name_audio}.wav` type="audio/waw")
+    object(type="application/x-shockwave-flash" data= `player.swf?miArchivo=${dir_audio}/${name_audio}`)
+      param(name="movie" value= `player.swf?miArchivo=${dir_audio}/${name_audio}`)
+      a(href=`${dir_audio}/${name_audio}.mp3`)
+        | Descárgate el archivo de audio
+  p Transcripción de mi archivo de audio
+
+//- // mixin audio-controls("audios", "audio1", "")
+//- +audio_controls("audios", "audio1", "")
+
+// end AUDIO-CONTROLS
+|
+|
+
+

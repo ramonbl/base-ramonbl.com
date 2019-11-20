@@ -1,0 +1,59 @@
+//  TEMPLATE_INDEX
+
+// block COMMENTS para comentarios de la página que llama a Template_index
+block COMMENTS
+  // block COMMENTS generado desde `template_index`
+  // --- Esta página está usando template_index ---
+  // end block COMMENTS
+|
+|
+// block CONFIG generado desde `template_index` para modificar variables
+block CONFIG
+  // include `config/CONFIG` desde `template_index`
+  include config
+
+//- Incluimos Mixins necesarios
+include ../mixins/mixins_base
+include ../mixins/mixins-header
+|
+|
+//  --------------     DOCTYPE --------------------
+doctype
+html(lang="es")
+
+  // --- HEAD ---
+  head
+    include ../includes/layout/head
+  |
+  |
+  // --- BODY ---
+  body
+    |
+    |
+    
+
+    // --- HEADER ---
+    header
+      include ../includes/layout/body/Header
+    |
+    |
+    // --- MAIN ---
+    main
+      // --- MAIN__INDEX-BANNER
+      include ../includes/layout/body/Main
+
+    |
+    |
+    
+    // --- FOOTER ---
+    footer.page-footer.docs-footer 
+      include ../includes/layout/body/Footer
+    |
+    |
+    // --- FINAL SCRIPTS ---
+    //#region Final Scripts
+    include ../includes/layout/body/Final-scripts 
+    // #endregion
+
+
+
